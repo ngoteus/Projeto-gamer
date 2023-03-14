@@ -1,5 +1,13 @@
 /* imports das fontes */
 @font-face {
+    font-family: TitiliumWeb-Bold;
+    src: url(../assests/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+@font-face {
+    font-family: TitiliumWeb-Regular;
+    src: url(../assests/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+@font-face {
     font-family: TitilliumWeb-Black;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
@@ -17,6 +25,7 @@
 body {
     color: #ffffff;
 }
+
 
 /* Classes genéricas */
 .layout-grid {
@@ -71,12 +80,17 @@ header .header-bottom nav {
 
     display: flex;
     flex-direction: column;
-    
-
     background-image: linear-gradient(to bottom right, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-    border: 1px solid white;
+    
 
+transition: left 0.4s;
+}
+.mostrar-more{
+    right: 0 !important;
+}
+.mostrar-menu {
+    left: 0 !important;
 }
 
 /* somente links "filhos diretos" */
@@ -87,7 +101,7 @@ header .header-bottom nav > a {
     border-bottom: 1px solid #F9AA01;
     text-align: center;
     text-decoration: none;
-    padding: 35px 0;
+    padding: 30px 0;
 
 
 }
@@ -98,7 +112,20 @@ header header.bottom nav > a:first-of-type{
 
 /* menu lateral direito - icones */
 header .header-bottom .menu-usuarios {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    right: -80vw;
+    top: 60px;
+    width: 20vw;
+    background-image: linear-gradient(to bottom right, rgba(27, 20, 38, 0.7), rgb(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    
+    padding: 20px 0;
+
+    transition: right 0.4s;
 }
 
 header .header-bottom  .midias-sociais {
@@ -113,6 +140,54 @@ header .header-bottom  .midias-sociais {
     bottom: 30px;
 }
 
-.mostrar-menu {
-    left: 0;
+
+/* MAIN */
+main {
+    margin-top: 60px;
 }
+/* Banner */
+.banner {
+    width: 100%;
+    height: 606px;
+    
+    background-image: url(../assests/images/banner-mobile-valorant.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 10px #FD4255;
+
+}
+
+.banner button {
+
+    font-family: TitiliumWeb-Bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    width: 171px;
+    height: 40px;
+    background-color: #F9AA01;
+    border: #F9AA01;
+    
+}
+
+.banner .botao-article {
+    display: flex;
+    justify-content:center;
+    padding-top: 470px;
+    
+    
+
+}
+
+
+
+

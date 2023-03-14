@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Gamer Manhã</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop-style.css" media="(min-width: 1024px)"> 
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <header>
 
         <div class="header-top">
-            <div class="layout-grid">
+            <div class="layout-grid flex">
                 <div class="contatos">
                     <div class="phone">
                         <img src="./assests/icons/phone.png" alt="Ícone de telefone">
@@ -80,10 +81,10 @@
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img src="./assests/icons/More.png" class="menu-pontinhos"
+                <img onclick="mostrarMore()" src="./assests/icons/More.png" class="menu-pontinhos"
                     alt="Ícone 3 pontinhos, abre o menu de usuários">
 
-                <div class="menu-usuarios">
+                <div class="menu-usuarios" id="more">
                     <a href="">
                         <img src="./assests/icons/User (1).png" alt="Ícone de perfil">
                     </a>
@@ -100,9 +101,27 @@
 
     <script>
         function mostrarMenu() {
-        document.getElementById("menu").classList.toggle(mostrar-menu);
+        document.getElementById("menu").classList.toggle("mostrar-menu");
+    }
+
+    function mostrarMore() {
+        document.getElementById("more").classList.toggle("mostrar-more");
     }
     </script>
+
+    <main>
+        <section class="banner">
+            <h1>Liga Gamers</h1>
+            <article class="botao-article">
+            <button class="botao-sobre">Sobre</button>
+        </article>
+        </section>
+    </main>
+
+    <footer>Todos o diretos reservados</footer>
+
+    
 </body>
+
 
 </html>
