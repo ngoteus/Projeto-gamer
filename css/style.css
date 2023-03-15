@@ -9,11 +9,15 @@
 }
 @font-face {
     font-family: TitilliumWeb-Black;
-    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+    src: url(../assests/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
 @font-face {
     font-family: Inter;
     src: url(../assests/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(../assests/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
 * {
@@ -156,7 +160,7 @@ main {
     background-position: bottom;
 }
 
-.banner h1 {
+h1 {
     font-family: TitilliumWeb-Black;
     font-size: 40px;
     display: flex;
@@ -165,7 +169,7 @@ main {
 
 }
 
-.banner button {
+.banner .botao-sobre {
 
     font-family: TitiliumWeb-Bold;
     font-size: 24px;
@@ -176,6 +180,8 @@ main {
     height: 40px;
     background-color: #F9AA01;
     border: #F9AA01;
+    text-decoration: none;
+    align-items: center;
     
 }
 
@@ -183,11 +189,187 @@ main {
     display: flex;
     justify-content:center;
     padding-top: 470px;
-    
-    
+}
+
+.jogos{
+    background-color: #1B1426;
+}
+
+.jogos img{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 69px;
+}
+.jogos img.fifa{
+    display: flex;
 
 }
 
+.jogos img.csgo {
+    display: flex;
+    padding-bottom: 72px;
+}
+
+.noticias{
+    background-color: #F9AA01;
+
+}
+
+h2{
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    color: #000000;
+    gap: 8%;
+    padding-left: 40px;
+    padding-top: 45px;
+}
+
+hr{
+    
+    width: 204px;
+    border-color: #000000;
+    border: 10;
+    margin-left: 65px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.noticias .killjoy-article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-left: 28px;
+    padding-bottom: 47px;
+    width: 231px;
+    height: 300px;
+    top: 1612px;
+    left: 125px;
+    background: linear-gradient(145deg, rgba(122, 49, 236, 0.4), rgba(47, 7, 109, 0.8));
+    border: 1px solid #ffffff;
+    border-radius: 8%;
+    backdrop-filter: blur(8px);
+}
+
+.noticias article.killjoy-article h3{
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0px 0px;
+}
+
+.noticias article.killjoy-article p{
+    font-family: Quicksand;
+    font-size: 13px;
+    color: #ffffff;
+}
 
 
+.noticias article.jinx-article {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
 
+width: 231px;
+height: 300px;
+top: 2249px;
+left: 9px;
+background: linear-gradient(145deg, rgba(122, 49, 236, 0.4), rgba(47, 7, 109, 0.8) );
+border: 1px solid #ffffff;
+border-radius: 8%;
+padding-top: 21px;
+padding-left: 35px;
+padding-bottom: 26px;
+padding-right: 35px;
+backdrop-filter: blur(8px);
+
+}
+
+.noticias article.jinx-article h4{
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: ;
+    text-shadow: 0px 0px;
+}
+
+.noticias article.jinx-article p{
+    font-family: Quicksand;
+    font-size: 13px;
+    color: #ffffff;
+
+}
+.card-killjoy{
+position: relative;
+margin-top: 200px;
+margin-left: 105px;
+align-self: flex-end;
+
+}
+
+.card-jinx{
+position: relative;
+margin-top: 320px;
+align-self: flex-start;
+}
+
+.noticias img.killjoy {
+    position: absolute;
+    right: 26px;
+    bottom: -88px;
+    padding-left: ;
+}
+
+.noticias img.jinx{
+    position: absolute;
+    left: 26px;
+    bottom: -10px;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Desktops */
+@media screen and (min-width: 1200px) {
+ 
+    /* HEADER */
+    header {
+        position: static;
+        height: 140px;
+    }
+    header .menu-hamburguer,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais, {
+        display: none;
+    }
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+        background-color: red;
+    }
+
+    header .header-bottom .menu-usuarios{
+        position: static;
+        flex-direction: row;
+        width: 180px;
+        height: 50px;
+        background-color: transparent;
+    }
+    /* MAIN */
+    
+
+}
