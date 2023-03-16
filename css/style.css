@@ -199,6 +199,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     padding-top: 69px;
+    width: 336px;
 }
 .jogos img.fifa{
     display: flex;
@@ -278,7 +279,7 @@ width: 231px;
 height: 300px;
 top: 2249px;
 left: 9px;
-background: linear-gradient(145deg, rgba(122, 49, 236, 0.4), rgba(47, 7, 109, 0.8) );
+background: linear-gradient(145deg, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.8) );
 border: 1px solid #ffffff;
 border-radius: 8%;
 padding-top: 21px;
@@ -338,28 +339,81 @@ align-self: flex-start;
 
 /* Desktops */
 @media screen and (min-width: 1200px) {
+
+    .layout-grid{
+        width: 100%;
+        max-width: 1200px;
+    }
  
     /* HEADER */
     header {
         position: static;
         height: 140px;
     }
+
+    header .header-top{
+        /* block e o valor default da maioria dos elementos*/
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        width: 415px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400
+        
+    }
+
+    header .header-top .midias-sociais{
+        border: 2px solid white;
+    }
+
+    header .header-top > div {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        gap: 10px;
+        /* border: 1px solid yellow; */
+    }
+
     header .menu-hamburguer,
     header .menu-pontinhos,
     header .header-bottom nav .phone,
     header .header-bottom nav .email,
-    header .header-bottom nav .midias-sociais, {
+    header .header-bottom nav .midias-sociais {
         display: none;
     }
+    header .header-bottom{
+        height: 90px;
+    }
+
     header .header-bottom img.logo {
         width: 200px;
     }
+
     header .header-bottom nav {
         position: static;
         width: 440px;
         height: 50px;
+        padding: 0;
         flex-direction: row;
-        background-color: red;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+
+        /* background-color: red; */
+    }
+
+    header .header-bottom nav > a{
+        border: none;
+        font-size: 14px;
     }
 
     header .header-bottom .menu-usuarios{
@@ -369,7 +423,73 @@ align-self: flex-start;
         height: 50px;
         background-color: transparent;
     }
-    /* MAIN */
-    
 
+    /* MAIN */
+    main {
+        margin-top: 0;
+        background-color: #1B1426;
+
+    }
+
+    .banner{
+        background-image: url(../assests/images/liga\ gamers\ desktop.png);
+        
+    }
+    h1{
+        font-size: 80px;
+    }
+
+    .banner .botao-article{
+        padding-top: 380px;
+    }
+
+    .jogos{
+        height: 500px; ;
+    }
+    .jogos .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+
+    .jogos img.fifa{
+        width: 556px;
+        height: 380px;
+    }
+
+    .jogos img.csgo{
+        width: 556px;
+        height: 453px; ;
+    }
+
+     h2{
+        
+        font-size: 40px;
+        padding-left: 290px;
+        letter-spacing: 4px;
+
+        
+    }
+    hr{
+        margin-left: 455px;
+    }
+     
+    .noticias .killjoy-article{
+        width: 290px;
+        height: 380px;
+        border-radius: 0;
+        border: none;
+        
+        justify-content: space-evenly;
+        
+    }
+    .noticias article.jinx-article{
+        width: 290px;
+        height: 380px;
+        border-radius: 0;
+        border: none;
+        justify-content: space-evenly;
+    }
 }
