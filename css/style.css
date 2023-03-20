@@ -229,7 +229,7 @@ h2{
     padding-top: 45px;
 }
 
-hr{
+.noticias hr{
     
     width: 204px;
     border-color: #000000;
@@ -299,7 +299,7 @@ backdrop-filter: blur(8px);
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
-    padding-left: ;
+    
     text-shadow: 0px 0px;
 }
 
@@ -327,7 +327,7 @@ align-self: flex-start;
     position: absolute;
     right: 26px;
     bottom: -88px;
-    padding-left: ;
+    
 }
 
 .noticias img.jinx{
@@ -355,7 +355,7 @@ footer #sobre {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(259, 128, 114, .3);
+    
 }
 
 footer #sobre > img{
@@ -368,12 +368,112 @@ font-size: 14px;
 font-weight: 400;
 }
 
-footer #midias-sociais-footer{
+footer #midias-sociais-footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    justify-content: space-between;
 }
+
+footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1530px;
+}
+
+footer .footer-top > div{
+    /* border: 2px solid white; */
+}
+
+footer .footer-top .titulo-footer h3{
+    font-family: TitilliumWeb-Black;
+    font-size: 30px;
+}
+
+footer .footer-top .titulo-footer hr{
+    width: 102px;
+    border: 3px solid #F9AA01;
+    
+}
+footer .footer-top .menu-footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+footer .footer-top .menu-footer li {
+    list-style-type: none;
+    width: 110px;
+    margin-bottom: 20px;
+
+
+}
+
+footer .footer-top .menu-footer a{
+    color: white;
+    text-decoration: none;
+    font-family: TitiliumWeb-Bold;
+    font-size: 16px;
+}
+
+footer .footer-top .menu-footer a:before{
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+}
+footer #newsletter input,
+footer #newsletter button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    
+}
+
+footer #newsletter input {
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom rgba(239, 239, 239, 0.6 ) rgba(239, 239, 239, 0.1));
+    backdrop-filter: blur(6px);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    font-family: TitiliumWeb-Regular;
+    font-size: 16px;
+}
+    footer #newsletter input::placeholder{
+
+        color: white;
+    }
+footer #newsletter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    font-family: TitiliumWeb-Bold;
+    font-size: 16px;
+}
+
+
+
+/* Contatos */
+
+footer .footer-top #contatos {
+    color: white;
+    font-family: TitiliumWeb-Bold;
+    font-size: 16px;
+}
+
+footer .footer-top #contatos p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+footer .footer-top #contatos p span {
+    color: #F9AA01;
+}
+
 
 /* Tablets */
 @media screen and (min-width: 768px) {

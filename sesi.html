@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sesi.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Professores</h1>
+    <form action="">
+        <label for="estado">Nome do Professor presente:</label>
+        <select name="" id="estado">
+            <option value="">Humberto</option>
+            <option value="">Isabel</option>
+            <option value="">Ronaldo</option>
+            <option value="">Fernanda</option>
+        </select>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" placeholder="Insira sua senha">
+        
+        <br>
+
+        <label for="">Horario:</label>
+        <select name="" id="Horario">
+            <option value="">13:30</option>
+            <option value="">14:20</option>
+            <option value="">15:10</option>
+            <option value="">16:20</option>
+            <option value="">17:10</option>
+            <option value="">18:00</option>
+            
+        </select>
+        
+        <br>
+
+        
+        <label for="Serie">Serie:</label>
+        <select name="" id="Serie">
+            <option value="">1A</option>
+            <option value="">1B</option>
+            <option value="">1C</option>
+            <option value="">2A</option>
+            <option value="">2B</option>
+            <option value="">2C</option>
+            <option value="">3A</option>
+            <option value="">3B</option>
+            <option value="">3C</option>
+        </select>
+        
+        <br>
+<button>Confirmar Presenca</button>
+        
+<script>
+
+    function mostrarSenha() {
+        if(mostra=false){
+            document.getElementById("senha").type = "text"
+            mostra = true;
+        }else{
+            document.getElementById("senha").type = "password"
+            mostra = false;
+        }
+        }
+    
+</script>
+
+
+    </form>
+
+       
+</body>
+</html>
