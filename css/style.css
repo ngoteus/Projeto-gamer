@@ -225,18 +225,19 @@ h2{
     font-size: 18px;
     color: #000000;
     gap: 8%;
-    padding-left: 40px;
+    padding-left: 27px;
     padding-top: 45px;
+    letter-spacing: 2px;
 }
 
 .noticias hr{
     
     width: 204px;
-    border-color: #000000;
-    border: 10;
+    height: 0;
+    border: 2px solid #000000;
     margin-left: 65px;
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 223px;
 }
 
 .noticias .killjoy-article{
@@ -310,23 +311,30 @@ backdrop-filter: blur(8px);
 
 }
 .card-killjoy{
+display: inline-block;
 position: relative;
-margin-top: 200px;
+
 margin-left: 105px;
 align-self: flex-end;
 
 }
 
 .card-jinx{
+display: inline-block;
 position: relative;
 margin-top: 320px;
 align-self: flex-start;
 }
 
+
+
 .noticias img.killjoy {
     position: absolute;
     right: 26px;
     bottom: -88px;
+    width: 314px ;
+    height: 511px;
+    
     
 }
 
@@ -334,6 +342,8 @@ align-self: flex-start;
     position: absolute;
     left: 26px;
     bottom: -10px;
+    width: 322px;
+    height: 428px;
 }
 
 /* Footer */
@@ -433,7 +443,7 @@ footer #newsletter button {
 
 footer #newsletter input {
     background-color: transparent;
-    background-image: linear-gradient(to right bottom rgba(239, 239, 239, 0.6 ) rgba(239, 239, 239, 0.1));
+    background-image: linear-gradient(to right, rgba(239, 239, 239, 0.6 ), rgba(239, 239, 239, 0.1));
     backdrop-filter: blur(6px);
     border: 1px solid white;
     color: white;
@@ -630,7 +640,7 @@ footer .footer-top #contatos p span {
         
     }
     hr{
-        margin-left: 455px;
+      
     }
      
     .noticias .killjoy-article{
@@ -649,8 +659,64 @@ footer .footer-top #contatos p span {
         border: none;
         justify-content: space-evenly;
     }
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 216px 0;
+        gap: 20px;
+    }
+    .card-jinx{
+        margin-top: 0;
+    }
+    .card-killjoy{
+        margin-top: 0;
+    }
+
+    .noticias img.killjoy{
+        position: absolute;
+        left: -308px;
+        bottom: -63px;
+        
+    }
+
+    .noticias img.jinx{
+        left: 26px;
+        bottom: -75px;
+    }
+    
+    footer .footer-top{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer #midias-sociais-footer {
+        width: 164px;
+    }
+
+    footer #sobre{
+        width: 285px;
+    }
+
+    footer .footer-top .menu-footer{
+        width: 148px;
+    }
+
+    footer #newsletter{
+        width: 285px;
+    }
+
+    footer .footer-top{
+        height: 400px;
+    }
+
+    footer #rights{
+        display: flex;
+        justify-content: center;
+    }
 
 
+    
 
     
 }
