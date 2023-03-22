@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="cadastro-equipe.css">
     <title>Document</title>
 </head>
 <body>
@@ -95,24 +94,25 @@
             </div>
         </div>
     </header>
-
     <main>
-        <form action="" class="login-form background-glass">
-            <div class="title-wrapper">
-                <h1 class="titulo-form">Login</h1>
-                <hr class="linha-amarela">
+        <form action="" class="cadastro-form">
+            <div class="cadastro"> 
+                 <h1 class="cadastro-titulo">Cadastro de Equipes</h1>
+                 <hr class="line-amarela">
             </div>
             <div class="inputs">
-                <div class="text-input transparent-input">
-                    <img src="./assests/icons/user-white-icon.png" alt="">
-                    <input type="text" name="email" id="email-login" placeholder="Digite seu e-mail:">
+                <div class="input-user">
+                    <input type="text" name="user" id="user-input" placeholder="Digite o ID da sua equipe:">
                 </div>
-                <div class="password-input transparent-input">
-                    <img src="./assests/icons/key-white-icon.png" alt="">
-                    <input type="password" name="password" id="password-login" placeholder="Digite sua senha:">
+                
+                <div class="input-senha">
+                    <input type="password" name="senha" id="senha-input" placeholder="Digite o nome da sua Equipe:">
+                </div>
+                <div class="input-imagem">
+                    <input type="file" name="imagem" id="selecionar-imagem" placeholder="Imagem">
                 </div>
             </div>
-            <button class="send-button yellow-button" type="submit">Logar</button>
+            <button class="botao-cadastrar"  type="submit"> Cadastrar</button>
         </form>
     </main>
     <footer>
@@ -202,7 +202,6 @@
         document.getElementById("more").classList.toggle("mostrar-more");
     }
     </script>
-
-
+    
 </body>
 </html>
