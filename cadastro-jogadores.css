@@ -138,6 +138,7 @@ header .header-bottom  .midias-sociais {
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding-top: 100px;
     height: 1403px;
@@ -241,6 +242,66 @@ main .botao-cadastro{
 
 }
 
+/* TABLE */
+main table thead th{
+    display: flex;
+    justify-content: space-between;
+    font-family: TitilliumWeb-Bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-right: 50px;
+    color: #F9AA01;
+
+}
+
+main table thead{
+    display: flex;
+    border-bottom: 3px solid #F9AA01;
+    margin-bottom: 15px;
+    
+}
+main table tr{
+    display: flex;
+    justify-content: space-between;
+    
+}
+main table tbody tr{
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    width: 336px;
+    height: 70px;
+    background-image: linear-gradient(91.4deg, rgba(27, 20, 38, .6), rgba(27, 20, 38, .4));
+    backdrop-filter: blur(10px);
+}
+main table tbody{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    
+}
+
+main table tbody td{
+    width: 100%;
+    padding: 0 3%;
+    
+    border-left: 3px solid #F9AA01;
+    margin-bottom: 12px;
+}
+main table tbody td:first-of-type{
+    border: none;
+}
+main table tbody td:last-of-type{
+    margin-right: 30px;
+}
+
+main table tbody td{
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
 /* Footer */
 footer{
     
