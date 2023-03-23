@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro-equipe.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./cadastro-jogadores.css">
+    <title>Jogadores</title>
 </head>
 <body>
     <header>
@@ -96,63 +96,31 @@
     </header>
     <main>
         <form action="" class="cadastro-form">
-            <div class="cadastro"> 
-                 <h1 class="cadastro-titulo">Cadastro de Equipes</h1>
-                 <hr class="line-amarela">
+            <div class="Jogadores">
+                <h1>Cadastro de Jogadores</h1>
+                <hr>
             </div>
             <div class="inputs">
-                <div class="input-user">
-                    <input type="text" name="user" id="user-input" placeholder="Digite o ID da sua equipe:">
+                <div class="input-id">
+                    <input type="text" name="ID" id="user-id" placeholder="Digite o ID do Jogador:">
                 </div>
-                
+                <div class="-select">
+                    <select name="" id="selecionar-equipe">
+                        <option value="1" class="valor1">Selecione uma Equipe:</option>
+                    </select>
+                </div>
+                <div class="input-nome">
+                    <input type="text" name="nome" id="user-nome" placeholder="Digite o nome do Jogador:">
+                </div>
+                <div class="input-email">
+                    <input type="email" name="email" id="user-email" placeholder="Digite o Email do Jogador:">
+                </div>
                 <div class="input-senha">
-                    <input type="password" name="senha" id="senha-input" placeholder="Digite o nome da sua Equipe:">
-                </div>
-                <div class="input-imagem">
-                    <label for="Imagem" id="selecionar-imagem">Imagem da Equipe</label>
-                    <input type="file" name="imagem" id="selecionar-imagem" >
+                    <input type="password" name="senha" id="user-senha" placeholder="Digite a Senha:">
                 </div>
             </div>
-            <button class="botao-cadastrar"  type="submit"> Cadastrar</button>
+            <button class="botao-cadastro" type="submit">Cadastrar</button>
         </form>
-
-        <table class="Equipe">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Foto</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-        </tbody>
-        </table>
-        
     </main>
     <footer>
         <div class="layout-grid footer-top">
@@ -242,6 +210,5 @@
         document.getElementById("more").classList.toggle("mostrar-more");
     }
     </script>
-    
 </body>
 </html>
