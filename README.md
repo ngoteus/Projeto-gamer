@@ -1,2 +1,2 @@
-# gamer-project
-It is a page for gamers.
+# Projeto Gamer
+Disponivel em:
