@@ -399,7 +399,7 @@ main .news hr {
 
 main .news .layout-boxes {
     display: flex;
-    flex-direction: column;
+    flex-direction:  column;
     align-items: center;
     justify-content: space-between;
 }
@@ -411,7 +411,6 @@ main .news article.box-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     border-radius: 8px;
 
     background: linear-gradient(152.78deg, #D9D9D9 -3.58%, #55505D 48.72%, #1B1426 100%);
@@ -638,7 +637,7 @@ footer #newsletter button {
 
 footer #newsletter input {
     background-color: transparent;
-    /* background-image: linear-gradient(to right, rgba(239, 239, 239, 0.6 ), rgba(239, 239, 239, 0.1)); */
+    
     /* backdrop-filter: blur(6px); */
     /* border: 1px solid white; */
     /* color: white; */
@@ -646,11 +645,10 @@ footer #newsletter input {
     font-family: TitiliumWeb-Regular;
     font-size: 16px;
     border: 2px solid transparent;
-    border-radius: 8px;
     background:
         /* fundo */
-        linear-gradient(to right, rgba(239, 239, 239, 0.6 ), rgba(239, 239, 239, 0.1)) padding-box,
         /* fundo borda */
+        linear-gradient(to right, rgba(239, 239, 239, 0.6 ), rgba(239, 239, 239, 0.1)) padding-box,
         linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
     backdrop-filter: blur(4px);
 }
@@ -666,7 +664,15 @@ footer #newsletter button {
     font-family: TitiliumWeb-Bold;
     font-size: 16px;
 }
-
+footer #rights{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+footer img#topo{
+    display: flex;
+    align-self: flex-end;
+ }
 
 
 /* Contatos */
@@ -834,7 +840,7 @@ footer .footer-top #contatos p span {
         height: 453px; ;
     }
 
-     h2{
+    .noticias h2{
         
         font-size: 40px;
         padding-left: 290px;
@@ -842,7 +848,8 @@ footer .footer-top #contatos p span {
 
         
     }
-    hr{
+    .noticias hr{
+        margin-left: 613px;
       
     }
      
@@ -880,12 +887,16 @@ footer .footer-top #contatos p span {
         position: absolute;
         left: -308px;
         bottom: -63px;
+        width: 425px;
+        height: 692px;
         
     }
 
     .noticias img.jinx{
         left: 26px;
         bottom: -75px;
+        width: 521px;
+        height: 692px;
     }
     
     /* news */
@@ -904,7 +915,6 @@ footer .footer-top #contatos p span {
     }
 
     main .news .layout-boxes {
-        
         flex-flow: row wrap;
         justify-content: space-between;
         
