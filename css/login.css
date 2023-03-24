@@ -156,8 +156,17 @@ main form.login-form {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid white;
-    backdrop-filter: blur(40px);
+    /* border: 1px solid white; */
+    /* backdrop-filter: blur(40px); */
+    /* efeito da borda e do fundo glass */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right bottom, rgba(27, 20, 38, .9), rgba(60, 3, 65, .5)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
 }
 
 main form.login-form div.inputs {

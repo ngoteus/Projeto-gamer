@@ -253,10 +253,20 @@ main {
     height: 300px;
     top: 1612px;
     left: 125px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        /* linear-gradient(to right bottom, rgba(27, 20, 38, .6), rgba(60, 3, 65, .38)) padding-box, */
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+
     background: linear-gradient(145deg, rgba(122, 49, 236, 0.4), rgba(47, 7, 109, 0.8));
     border: 1px solid #ffffff;
-    border-radius: 8%;
+    /* border-radius: 8%; */
     backdrop-filter: blur(8px);
+    
 }
 
 .noticias article.killjoy-article h3{
@@ -285,13 +295,24 @@ height: 300px;
 top: 2249px;
 left: 9px;
 background: linear-gradient(145deg, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.8) );
-border: 1px solid #ffffff;
+/* border: 1px solid #ffffff; */
 border-radius: 8%;
 padding-top: 21px;
 padding-left: 35px;
 padding-bottom: 26px;
 padding-right: 35px;
-backdrop-filter: blur(8px);
+/* backdrop-filter: blur(8px); */
+border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+         linear-gradient(145deg, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.8) ) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
+    /* border: 1px solid #ffffff */
+    ;
+
 
 }
 
@@ -617,13 +638,21 @@ footer #newsletter button {
 
 footer #newsletter input {
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(239, 239, 239, 0.6 ), rgba(239, 239, 239, 0.1));
-    backdrop-filter: blur(6px);
-    border: 1px solid white;
-    color: white;
+    /* background-image: linear-gradient(to right, rgba(239, 239, 239, 0.6 ), rgba(239, 239, 239, 0.1)); */
+    /* backdrop-filter: blur(6px); */
+    /* border: 1px solid white; */
+    /* color: white; */
     padding: 5px 10px;
     font-family: TitiliumWeb-Regular;
     font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        /* fundo */
+        linear-gradient(to right, rgba(239, 239, 239, 0.6 ), rgba(239, 239, 239, 0.1)) padding-box,
+        /* fundo borda */
+        linear-gradient(90deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .1)) border-box;
+    backdrop-filter: blur(4px);
 }
     footer #newsletter input::placeholder{
 
