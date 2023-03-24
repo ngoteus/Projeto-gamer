@@ -10,6 +10,10 @@
     font-family: TitilliumWeb-Bold;
     src: url(./assests/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
 }
+@font-face {
+    font-family: Inter;
+    src: url(./assests/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
 
 *
     * {
@@ -484,8 +488,174 @@ footer .footer-top #contatos p span {
 }
 
 @media screen and (min-width:1024px) {
-    main {
-        background-image: url(./assests/images/Vector\ \(1\).png);
-        background-repeat: no-repeat;
+    .layout-grid{
+        width: 100%;
+        max-width: 1200px;
     }
+ 
+    /* HEADER */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    header .header-top{
+        /* block e o valor default da maioria dos elementos*/
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        width: 415px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #FFFFFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400
+        
+    }
+
+    header .header-top .midias-sociais{
+        border: 2px solid white;
+    }
+
+    header .header-top > div {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        gap: 10px;
+        /* border: 1px solid yellow; */
+    }
+
+    header .menu-hamburguer,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+    header .header-bottom{
+        height: 90px;
+    }
+
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+
+        /* background-color: red; */
+    }
+ 
+    /* links para filhos diretos */
+    header .header-bottom nav > a{
+        border: none;
+        font-size: 14px;
+    }
+
+    header .header-bottom nav>a:hover{
+        background-color: transparent;
+        color: #F9AA01;
+    }
+
+
+    header .header-bottom nav>a:last-of-type{
+    border-bottom: none;
+
+    }
+
+
+
+    header .header-bottom .menu-usuarios{
+        position: static;
+        flex-direction: row;
+        width: 180px;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    main {
+        background-size: cover;
+        background-image: url(./assests/images/fundoooo.png);
+        background-repeat: no-repeat;
+        padding-bottom: 130px;
+        padding-top: 90px;
+    }
+
+    main form.cadastro-form{
+        width: 800px;
+        height: 670px;
+
+    }
+    main .cadastro-form #user-id,
+    main .cadastro-form #selecionar-equipe,
+    main .cadastro-form #user-nome,
+    main .cadastro-form #user-email,
+    main .cadastro-form #user-senha{
+        width: 565px;
+}
+main table{
+    width: 800px;
+}
+main table thead .nome-th{
+margin-right: 340px;
+}
+main table thead .id-th {
+    margin-right: 70px;
+}
+main table tbody tr{
+    width: 800px;
+    height: 125px;
+}
+main table tbody td{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    
+}
+main table tbody .joao{
+    margin-right: 280px;
+}
+footer .footer-top{
+    display: flex;
+    flex-direction: row;
+}
+
+footer #midias-sociais-footer {
+    width: 164px;
+}
+
+footer #sobre{
+    width: 285px;
+}
+
+footer .footer-top .menu-footer{
+    width: 148px;
+}
+
+footer #newsletter{
+    width: 285px;
+}
+
+footer .footer-top{
+    height: 400px;
+}
+
+footer #rights{
+    display: flex;
+    justify-content: center;
+}
+
 }
