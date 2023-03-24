@@ -1,2 +1,2 @@
 # Projeto Gamer
-Disponivel em:
+Disponivel em: https://ngoteus.github.io/Projeto-gamer/
