@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="cadastro-equipe.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
 
@@ -55,7 +57,8 @@
                     <!-- visível apenas no mobile -->
 
                     <a class="phone">
-                        <img src="./assests/icons/phone.png" alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
+                        <img src="./assests/icons/phone.png"
+                            alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
                         <span>(11) 0900-1010</span>
                     </a>
                     <a class="email">
@@ -71,7 +74,8 @@
                             <img src="./assests/icons/Linkedin (1).png" alt="Imagem link do Linkedin da empresa Gamer">
                         </a>
                         <a href="">
-                            <img src="./assests/icons/Instagram (1).png" alt="Imagem link do Instagram da empresa Gamer">
+                            <img src="./assests/icons/Instagram (1).png"
+                                alt="Imagem link do Instagram da empresa Gamer">
                         </a>
                     </div>
                 </nav>
@@ -96,70 +100,78 @@
     </header>
     <main>
         <form action="" class="cadastro-form">
-            <div class="cadastro"> 
-                 <h1 class="cadastro-titulo">Cadastro de Equipes</h1>
-                 <hr class="line-amarela">
+            <div class="cadastro">
+                <h1 class="cadastro-titulo">Cadastro de Equipes</h1>
+                <hr class="line-amarela">
             </div>
             <div class="inputs">
                 <div class="input-user">
                     <input type="text" name="user" id="user-input" placeholder="Digite o ID da sua equipe:">
                 </div>
-                
+
                 <div class="input-senha">
                     <input type="password" name="senha" id="senha-input" placeholder="Digite o nome da sua Equipe:">
                 </div>
-                <div class="input-imagem">
-                    <label for="Imagem" id="selecionar-imagem">Imagem da Equipe</label>
-                    <input type="file" name="imagem" id="selecionar-imagem" >
+                <div class="file-input-container">
+                    <label class="file-label" for="team-image">
+                        Imagem da Equipe
+                        <input class="file-input" 
+                            type="file"
+                            name="team-image" 
+                            id="team-image" 
+                            accept="image/png, image/jpeg">
+                    </label>
                     <span class="span-imagem"> Nenhuma imagem selecionada...</span>
                 </div>
+                </div>
             </div>
-            <button class="botao-cadastrar"  type="submit"> Cadastrar</button>
+            <button class="botao-cadastrar" type="submit"> Cadastrar</button>
         </form>
 
         <table class="Equipe">
             <thead>
-            <tr>
-                <th class="id-th">ID</th>
-                <th class="nome-th">Nome</th>
-                <th>Foto</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td class="loud">LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="loud">LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="loud">LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td class="loud">LOUD</td>
-                <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
-                <td><img src="./assests/icons/Trash can.png" alt=""></td>
-            </tr>
-        </tbody>
+                <tr>
+                    <th class="id-th">ID</th>
+                    <th class="nome-th">Nome</th>
+                    <th>Foto</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="loud">LOUD</td>
+                    <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
+                    <td><img src="./assests/icons/Trash can.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="loud">LOUD</td>
+                    <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
+                    <td><img src="./assests/icons/Trash can.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="loud">LOUD</td>
+                    <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
+                    <td><img src="./assests/icons/Trash can.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="loud">LOUD</td>
+                    <td><img src="./assests/images/LOUD_LOGO 1 (1) 1.png" alt=""></td>
+                    <td><img src="./assests/icons/Trash can.png" alt=""></td>
+                </tr>
+            </tbody>
         </table>
-        
+
     </main>
     <footer>
         <div class="layout-grid footer-top">
             <div id="sobre">
                 <img src="./assests/icons/LOGOTIPO.png" alt="Logotipo, imagem com texto video game ao centro">
-                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente comprometida.</p>
                 <div id="midias-sociais-footer">
                     <a href="">
                         <img src="./assests/icons/Facebook-footer.png" alt="Icone do Facebook">
@@ -174,31 +186,31 @@
             </div>
             <div id="links-uteis">
                 <div class="titulo-footer">
-                    <h3>Links Uteis</h3>
+                    <h3 class="Links-h3">Links Uteis</h3>
                     <hr>
-                 </div>
+                </div>
 
-                 <ul class="menu-footer">
-                     <li>
-                         <a href="./index.html">Inicio</a>
-                     </li>
-                     <li>
-                         <a href="./cadastro-jogadores.html">Jogadores</a>
-                     </li>
-                     <li>
-                         <a href="./index.html#news">Noticias</a>
-                     </li>
-                     <li>
-                         <a href="./cadastro-equipe.html">Equipes</a>
-                     </li>
-                     <li>
-                         <a href="./login.html">Login</a>
-                     </li>
+                <ul class="menu-footer">
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./cadastro-jogadores.html">Jogadores</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#news">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="./cadastro-equipe.html">Equipes</a>
+                    </li>
+                    <li>
+                        <a href="./login.html">Login</a>
+                    </li>
                 </ul>
             </div>
             <div id="contatos">
                 <div class="titulo-footer">
-                    <h3>Contatos</h3>
+                    <h3 class="Contatos-h3">Contatos</h3>
                     <hr>
                 </div>
                 <p>
@@ -216,7 +228,7 @@
             </div>
             <div id="newsletter">
                 <div class="titulo-footer">
-                    <h3>Newsletter</h3>
+                    <h3 class="newsletter-h3">Newsletter</h3>
                     <hr>
                 </div>
                 <form action="" class="frm-news">
@@ -230,19 +242,21 @@
             <p id="rights">©Copyright2022-GamerJogosDigitais</p>
         </div>
 
-        <img id="topo" src="./assests/icons/Voltar o topo.png" alt="Icone com a seta pra cima, clique para voltar ao topo">
-    
+        <img id="topo" src="./assests/icons/Voltar o topo.png"
+            alt="Icone com a seta pra cima, clique para voltar ao topo">
+
     </footer>
-    
+
     <script>
         function mostrarMenu() {
-        document.getElementById("menu").classList.toggle("mostrar-menu");
-    }
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
 
-    function mostrarMore() {
-        document.getElementById("more").classList.toggle("mostrar-more");
-    }
+        function mostrarMore() {
+            document.getElementById("more").classList.toggle("mostrar-more");
+        }
     </script>
-    
+
 </body>
+
 </html>

@@ -260,9 +260,7 @@ footer .footer-top {
     height: 1530px;
 }
 
-footer .footer-top > div{
-    /* border: 2px solid white; */
-}
+
 
 footer .footer-top .titulo-footer h3{
     font-family: TitilliumWeb-Black;
@@ -383,9 +381,7 @@ footer .footer-top #contatos p span {
         
     }
 
-    header .header-top .midias-sociais{
-        border: 2px solid white;
-    }
+    
 
     header .header-top > div {
         display: flex;

@@ -518,9 +518,7 @@ footer .footer-top #contatos p span {
         
     }
 
-    header .header-top .midias-sociais{
-        border: 2px solid white;
-    }
+   
 
     header .header-top > div {
         display: flex;
@@ -597,6 +595,8 @@ footer .footer-top #contatos p span {
     main form.cadastro-form{
         width: 800px;
         height: 670px;
+        padding-bottom: 25px;
+        padding-top: 20px;
 
     }
     main .cadastro-form #user-id,
@@ -606,6 +606,7 @@ footer .footer-top #contatos p span {
     main .cadastro-form #user-senha{
         width: 565px;
 }
+
 main table{
     width: 800px;
 }
@@ -628,6 +629,12 @@ main table tbody td{
 main table tbody .joao{
     margin-right: 280px;
 }
+footer{
+    padding-top: 80px;
+    
+    
+
+}
 footer .footer-top{
     display: flex;
     flex-direction: row;
@@ -639,6 +646,9 @@ footer #midias-sociais-footer {
 
 footer #sobre{
     width: 285px;
+}
+footer #sobre p{
+    margin-right: 20px;
 }
 
 footer .footer-top .menu-footer{
