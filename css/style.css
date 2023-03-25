@@ -217,7 +217,7 @@ main {
 
 .noticias{
     background-color: #F9AA01;
-
+    padding-bottom: 250px;
 }
 
 .noticias h2{
@@ -849,7 +849,7 @@ footer .footer-top #contatos p span {
         
     }
     .noticias hr{
-        margin-left: 613px;
+        margin-left: 510px;
       
     }
      
@@ -910,7 +910,7 @@ footer .footer-top #contatos p span {
     }
 
     main .news h2 {
-        margin-right: 280px;
+        margin-right: 0px;
         font-size: 40px;
     }
 
